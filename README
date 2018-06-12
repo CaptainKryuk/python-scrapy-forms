@@ -1,0 +1,11 @@
+For testing app:
+1. Set virtual enviroment
+>>> virtualenv env_name
+2. Install libs from requirements
+>>> pip install -r requirements.txt
+3. change necessary url in "start url = []" in spider folder, which in forms/spider/forms.py
+4. Add root part in 11 line
+5. Run spider
+>>> scrapy crawl forms (if you change spider name - need to change spider name in command)
+if you want output in csv file, run:
+>>> scrapy crawl forms -o output.csv -p csv
